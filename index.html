@@ -42,6 +42,7 @@
       <ul>
         <li><a id="test" target="_blank">test</a></li>
         <li><a id="table" target="_blank">table</a></li>
+        <li><a id="table1" target="_blank">table1</a></li>
 
       </ul>
     </div>
@@ -54,6 +55,8 @@
       // Now you can use baseURL to construct your links
       var testPageURL = baseURL + "test/index.html";
       var tablePageURL = baseURL + "table/index.html";
+      var table1PageURL = baseURL + "table1/index.html";
+
 
       // Get all <li> elements
       var listItems = document.querySelectorAll("ul li");
@@ -69,6 +72,8 @@
             document.querySelector("#test").setAttribute("href", testPageURL); 
             case "table":
             document.querySelector("#table").setAttribute("href", tablePageURL);
+            case "table1":
+            document.querySelector("#table").setAttribute("href", table1PageURL);
         }
       });
     </script>
