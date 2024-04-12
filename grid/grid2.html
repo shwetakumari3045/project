@@ -5,15 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            padding: 20px;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+        .left{
+            height: 360px;
+            width: 180px;
+            border-radius: 10px;
+            padding-top: 12px;
+            font-size: 12px;
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+        h1{
+            color: rgba(128, 128, 128, 0.584);
+            padding-left: 10px;
+            font-size: 17px;
+        }
+        ul{
+            
+            list-style: none;
+            
+        }
+        .box{
+            padding-left: 12px;
+        }
+        .box,li,a{
+            font-size: 17px;
+            text-decoration: none;
+            color: rgb(43, 226, 61);
+        }
+        .card{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 600px;
+            width: calc(100% - 250px);
+            margin-left: 20px;
+            gap: 10px;
+        }
+        .first{
+            width: 1280px;
+            height: 250px;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 128, 0.119);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            
+        }
+        .item1{
+            margin: 20px;
+        }
+        
+        .first,h2{
+            font-size: 40px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p{
+            font-size: 15px;
+        }
+        .first{
+            padding: 50px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        a{
+            display: inline-block;
+            width: 165px;
+            height: 20px;
+        }
+        a:hover{
+            background-color: green;
+        }        
+    
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            
+        
+        <div class="left">
+            <h1>SIDE BAR</h1>
+                <ul class="box">
+                <li><a href="">Link</a></li>
+                
+                <li><a href="">Link</a></li>
+                
+                <li><a href="">Link</a></li>
+                
+               <li> <a href="">Link</a></li>
+               </ul>
+
+               <h1>SIDE BAR</h1>
+               <ul class="box">
+                <li><a href="">Link</a></li>
+                
+                <li><a href="">Link</a></li>
+                
+                <li> <a href="">Link</a></li>
+
+                <li> <a href="">Link</a></li>
+
+                <li><a href="">Link</a></li>
+                
+               <li> <a href="">Link</a></li>
+            </ul>
+                <h1>SIDE BAR</h1>
+                <ul class="box">
+                    <li><a href="">Link</a></li>
+                
+                    <li><a href="">Link</a></li>
+                    
+                    <li><a href="">Link</a></li>
+                    
+                   <li> <a href="">Link</a></li>
+               </ul>
+                  </div>
+                  <div class="card">
+                <div class="first item1">
+                    <h2>Hello, world!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                    
+                </div>
+                <div class="second item1">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                </div>
+                <div class="third item1">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                </div>
+                <div class="fourth item1">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                </div>
+                <div class="five item1">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                </div>
+                <div class="six item1">
+                     <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                </div>
+                <div class="seven item1">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum ipsa blanditiis quo illo quasi laboriosam vitae harum deleniti consequuntur, adipisci, qui similique. At dicta eum voluptas molestiae odit officia?</p>
+                </div>
+                
+                  </div>
         </div>
-    </div>
+
     
 </body>
 </html>

@@ -43,6 +43,10 @@
         <li><a id="test" target="_blank">test</a></li>
         <li><a id="alltable" target="_blank">alltable</a></li>
         <li><a id="grid" target="_blank">grid</a></li>
+        <li><a id="flex" target="_blank">flex</a></li>
+        <li><a id="animation_transform" target="_blank">animation_transform</a></li>
+        <li><a id="transform" target="_blank">transform</a></li>
+      
       
       </ul>
     </div>
@@ -56,6 +60,9 @@
       var testPageURL = baseURL + "test/index.html";
       var alltablePageURL = baseURL + "alltable/index.html";
       var gridPageURL = baseURL + "grid/index.html";
+      var flexPageURL = baseURL + "flex/index.html";
+      var animation_transformPageURL = baseURL + "grid/index.html";
+      
       // Get all <li> elements
       var listItems = document.querySelectorAll("ul li");
 
@@ -72,6 +79,12 @@
             document.querySelector("#alltable").setAttribute("href", alltablePageURL); 
             case "grid":
             document.querySelector("#grid").setAttribute("href", gridPageURL); 
+             
+             case "flex":
+            document.querySelector("#flex").setAttribute("href", flexPageURL); 
+            case "animation_transform":
+            document.querySelector("#animation_transform").setAttribute("href", animation_transformPageURL); 
+            
              }
       });
     </script>

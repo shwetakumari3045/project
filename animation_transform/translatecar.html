@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            height: 250px;
+            background-image: url('road2.webp');
+            background-repeat: repeat-x;
+            background-position: 100% 0;
+
+
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+            animation-timing-function: linear;
+
+
+            position: relative;
+
+
+        }
+        .container img{
+            width: 150px;
+            position: absolute;
+            right: 40%;
+            top: 80px;
+        }
+        @keyframes move {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="car.webp">
+    </div>
+</body>
+
+</html>
